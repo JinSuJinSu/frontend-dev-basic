@@ -13,10 +13,9 @@ body {
 }
 
 .header	{
-	width: 630px;
+	width: 930px;
 	height: 100px;
 	margin:50px auto;
-	background-color: #ddd;
 }
 
 .header .logo, .header .search-box {
@@ -31,30 +30,73 @@ body {
 }
 
 .search-box {
-	width: 400px;
-	height: 52px;
-	background-color: #ccc;
+	border: 2px solid #19ce60;
+	width: 650px;
+	height: 56px;
+	margin-left:30px;
 }
 
-.search-box input, .search-box a {
-	display: block;
-}  
 
-.search-box input, .search-box .btn-search, .search-box  a {
+.search-box input, .search-box .btn-search, .search-box .dropdown, .search-box .keyboard{
+	display:block;
 	float: right;
 }
 
-/* .search-box .keyboard{
-	width:20px;
-	height:12px;
-	background: #fff url('/ch03/images/nsplite.png') no-repeat -420px -395px / 457px 434px;
+.search-box input{
+	border:none;
+	width:520px;
+	height:30px;
+	font-size:1.5em;
+	font-weight:bold;
+	margin: 13px auto;
+}
+
+
+.search-box .keyboard{
+	width:36px;
+	height:56px;
+	background-color : #fff;
 }
 
 .search-box .dropdown{
+	width:22px;
+	height:56px;
+	background-color : #fff;
+}
+
+.search-box .btn-search{
+	width:56px;
+	height:56px;
+	background-color : #19ce60;
+}
+
+.search-box .keyboard .keyboard-icon{
+	font-size: 0;
+	width:20px;
+	height:12px;
+	background : #fff url('/ch03/images/nsplite.png') no-repeat -420px -395px / 457px 434px;
+	margin: 22px auto;
+	z-index:1;
+}
+
+.search-box .dropdown .dropdown-icon{
+	font-size: 0;
 	width:10px;
 	height:5px;
 	background: #fff url('/ch03/images/nsplite.png') no-repeat -408px -77px / 457px 434px;
-} */
+	margin: 25px auto;
+	z-index:1;
+}
+
+
+.search-box .btn-search .btn-search-icon{
+	font-size: 0;
+	width:22px;
+	height:22px;
+	background: #19ce60 url('/ch03/images/nsplite.png') no-repeat -420px 0 / 457px 434px;
+	margin: 17px auto;
+	z-index:1;
+}
 	
 </style>
 </head>
@@ -63,11 +105,15 @@ body {
 		<h1 class="logo">네이버</h1>
 		<div class="search-box">
 			<div class="btn-search">
-				<button>돋보기</button>
+				<h2 class="btn-search-icon">돋보기</h2>
 			</div>
-			<a href="#"  id="dropdown">드롭다운</a>
-			<a href="#"  id="keyboard">키보드</a>
-			<input type='text' />
+			<div class="dropdown">
+				<h2 class="dropdown-icon">드롭다운</h2>
+			</div>
+			<div class="keyboard">
+				<h2 class="keyboard-icon">키보드</h2>
+			</div>
+			<input type='text'/>
 		</div>
 	</div>
 </body>
