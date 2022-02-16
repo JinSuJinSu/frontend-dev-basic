@@ -55,8 +55,6 @@
 					<failOnMissingWebXml>true</failOnMissingWebXml>
 				</configuration>
 			</plugin>
-			
-		
 		</plugins>
 	</build>
 	
