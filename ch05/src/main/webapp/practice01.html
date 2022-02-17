@@ -14,10 +14,47 @@ body {
 	font-size: 0.75em;
 	color: #333
 }
+
+.tbl-ex{
+	margin:50px auto;
+	border: 1px solid #333;
+	border-collapse:collapse;
+	border-left-width:0;
+	border-right-width:0;
+}
+
+.tbl-ex th, .tbl-ex td{
+	padding:8px;
+	border: 1px solid #333;
+	border-left-width:0;
+	border-right-width:0;
+}
+
+.tbl-ex th{
+	background-color:#999;
+	font-size:1.1em;
+	color:#fff;
+	border-top-width:2px;
+	border-bottom-width:2px;
+}
+
+.tbl-ex td{
+	border-style:dotted;
+}
+
+.tbl-ex tr.even td{
+	background-color:#EBECF6;
+}
+
+.tbl-ex tr:hover td{
+	background-color:#fc8;
+	cursor:pointer;
+}
+
 </style>
 </head>
 <body>
-	<table class="tbl-ex">
+	<table class="tbl-ex" border="1">
 		<tr>
 			<th>형식</th>
 			<th>선택자 이름</th>
