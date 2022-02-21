@@ -12,7 +12,8 @@
         Boolean() => object type
         Object() => object type
         Array() => object type
-        Number() => object type
+        Date() => object type
+        Function() => object type
     2. {} 객체 리터털 JSON(JavsScriptObjectNotation)
     3. [] 배열 리터럴
     4. null
@@ -29,7 +30,7 @@
     Number, Boolean, Date, RegExp, ... : 생성자 함수
     setTimeout, parseInt, ...          : 일반 함수
 2.  호스트 객체
-    자바스크립트 엔진이 입베드된 환경(호스트)의 객체
+    자바스크립트 엔진이 임베드된 환경(호스트)의 객체
     -   호스트 환경이 브라우저: document, location, XmlHttpRequest, window, ...
     -   호스트 환경이 노드(node.js): os, http, fs, path, ...
 3.  사용자 객체
