@@ -39,26 +39,19 @@ ul, ol					{list-style-type:none;}
 	margin-top:-1px;
 }
 </style>
+<script type="text/javascript" src="tabbox.js"></script>
 <script type="text/javascript">
-// Dom Event Model Level0: Inline HTML 태그에 바로 적용시키기
-let liSelected = null;
-let onTabClicked = function(li){
-	li.className="selected";
-	if(liSelected!=null && liSelected){
-		liSelected.className="";
-	}
-	liSelected=li;
-}
+tabBox.init();
 </script>
 </head>
 <body>
 <div class="tab-box">
 	<ul>
-        <li onclick="onTabClicked(this);">메뉴 1</li>
-        <li onclick="onTabClicked(this);">메뉴 2</li>
-        <li onclick="onTabClicked(this);">메뉴 3</li>
-        <li onclick="onTabClicked(this);">메뉴 4</li>
-        <li onclick="onTabClicked(this);">메뉴 5</li>
+        <li>메뉴 1</li>
+        <li>메뉴 2</li>
+        <li>메뉴 3</li>
+        <li>메뉴 4</li>
+        <li>메뉴 5</li>
     </ul>
     <div>
     	탭뷰입니다.
