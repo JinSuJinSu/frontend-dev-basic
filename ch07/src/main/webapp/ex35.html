@@ -4,13 +4,28 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script type="text/javascript" src="./jquery/jquery-3.6.0.js"></script>
 <script type="text/javascript">
-/* jquery plug in */
+/* jquery plug in hello*/
+$.fn.hello = function(){
+	console.log("Hello World");
+	console.log(this.length); //1
+	console.log(this.attr("title")); // header
+	return this;
+};
+ 
+$.fn.flash = function(){
+	let _this = this;
+	let isBlink = false;
+	setInterval(function(){
+		_this.css("background-color", isBlink ? "#F00":"#fff");
+		isBlink=!isBlink;
+	},1000);
+};
+ 
+// test
 $(function() {
-	$('h1').flash();
 	$("#btn").click(function(){
-		$(this)
-			.hello()
-			.flash();
+		$(this).hello();
+		$("h1").flash();
 	});
 });  
 </script>
