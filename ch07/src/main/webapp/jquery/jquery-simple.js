@@ -32,5 +32,10 @@ _jQuery.prototype.click = function(handler) {
 	}	
 }
 
+_jQuery.prototype.get = function(index) {
+	return this[index];
+}
+
+
 
 let $ = jQuery;
