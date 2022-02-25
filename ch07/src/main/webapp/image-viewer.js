@@ -1,5 +1,5 @@
 let imageViewer = {
-	
+
 	_images : 
 	[{	
 		name:"국화",
@@ -27,7 +27,7 @@ let imageViewer = {
 		file:"Tulips.jpg"
 	}
 	],
-	
+
 	_changeImage : function(){
 		let index = Math.floor(Math.random() * this._images.length);
 		$(".image-viewer img").attr({
@@ -35,9 +35,9 @@ let imageViewer = {
 			src:"images/" + this._images[index].file
 		});
 	},
-	
+
 	_timer : null,
-	
+
 	_slideImage : function(){
 	if(this._timer!=null){
 		clearInterval(this._timer);
