@@ -29,6 +29,7 @@ $(function(){
 					console.error(response.message);
 					return;
 				}
+				console.log(response)
 				
 				let html = "";
 				html += ("<h1>" + response.data.no + "</h1>");

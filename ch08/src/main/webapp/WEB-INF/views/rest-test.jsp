@@ -65,7 +65,7 @@ $(function(){
 		});
 	});
 	
-	$("#delete").click(function(){`
+	$("#delete").click(function(){
 		$.ajax({
 			url: "${pageContext.request.contextPath }/api/user/10",
 			async: true,
