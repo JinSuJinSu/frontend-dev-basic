@@ -19,7 +19,7 @@ $(function(){
 		};
 		
 		$.ajax({
-			url: "${pageContext.request.contextPath }/api/user",
+			url: "${pageContext.request.contextPath}/api/user",
 			async: true,
 			type: 'post',				// 요청 method
 			dataType: 'json',		// 응답 포맷,
@@ -61,9 +61,12 @@ $(function(){
 			data: JSON.stringify(vo),	
 			success: function(response) {
 				console.log(response)
-			}			
+			}
+			
 		});
-	});
+	}
+	
+	);
 	
 	$("#delete").click(function(){
 		$.ajax({
