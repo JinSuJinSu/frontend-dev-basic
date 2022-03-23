@@ -27,4 +27,4 @@ console.log(add(10,20));
 
 // 5. import
 import math, {divide} from './ex08.05.mjs'
-console.log(math.subtract(20,10), divide(30,2));
+console.log(math.subtract(20,10), divide(30,2 ));
